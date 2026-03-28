@@ -1,0 +1,377 @@
+html,
+body {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('assets/background.jpg');
+}
+.header{
+    height: 100px;
+    width: 100%;
+}
+.header h1{
+    font-family: "Birthstone", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.main {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 700px;
+    margin: 0 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Space out top and middle sections */
+    padding: 5px 0;
+}
+.main h3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.top-row,
+.middle-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.middle-row {
+    margin-top: 0px;
+    /* Pushes it to the middle */
+    margin-bottom: 0;
+    height: 300px;
+}
+.top-row{
+    height: 300px;
+}
+.main img {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.main img:hover{
+    height: 240px;
+    width: 240px;
+    animation-name: plate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: drop-shadow(0 0 10px rgba(255, 178, 62));
+}
+.main a{
+    cursor: pointer;
+}
+.table{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.info .plate{
+    height: 500px;
+    width: 500px;
+}
+.info{
+    text-align: center;
+}
+.ingredients{
+    background-color: rgb(255, 255, 255,0.8);
+    border-radius: 10px;
+    width: 500px;
+}
+.ingredients h2{
+    text-align: center;
+    font-size: 50px;
+    color:brown;
+    margin-left: 10px;
+}
+.ingredients ul{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.ingredients li{
+    margin-top: 18px;
+}
+.info h2{
+    font-family: "Birthstone", cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 100px;
+    color: rgb(249, 243, 238);
+}
+.info a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.info .button {
+    width: 200px;
+    height: 70px;
+}
+.instruction{
+    width: 500px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.instruction h2{
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+.instruction ol{
+    font-size: 28px;
+}
+.instruction li{
+    margin-top: 18px;
+}
+.info-chicken h2{
+    font-family: "Birthstone", cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 80px;
+    color: rgb(249, 243, 238);
+}
+.info-chicken a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.info-chicken .button {
+    width: 200px;
+    height: 70px;
+}
+.info-chicken .plate {
+    height: 500px;
+    width: 500px;
+    animation-name: plate;
+}
+
+.info-chicken {
+    text-align: center;
+}
+.ingredients-chicken {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 500px;
+}
+
+.ingredients-chicken h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.ingredients-chicken ul {
+    font-size: 20px;
+}
+
+.ingredients-chicken li {
+    margin-top: 15px;
+}
+.instruction-chicken {
+    width: 500px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.instruction-chicken h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.instruction-chicken ol {
+    font-size: 15px;
+}
+
+.instruction-chicken li {
+    margin-top: 18px;
+}
+.ingredients-sisig {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 500px;
+}
+
+.ingredients-sisig h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.ingredients-sisig ul {
+    font-size: 20px;
+}
+
+.ingredients-sisig li {
+    margin-top: 15px;
+}
+
+.instruction-sisig {
+    width: 500px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.instruction-sisig h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.instruction-sisig ol {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.instruction-sisig li {
+    margin-top: 18px;
+}
+.ingredients-calamari {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 500px;
+}
+
+.ingredients-calamari h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.ingredients-calamari ul {
+    font-size: 40px;
+}
+
+.ingredients-calamari li {
+    margin-top: 15px;
+}
+
+.instruction-calamari {
+    width: 500px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.instruction-calamari h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.instruction-calamari ol {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.instruction-calamari li {
+    margin-top: 18px;
+}
+.instruction-eggPlant {
+    width: 500px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.instruction-eggPlant h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.instruction-eggPlant ol {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.instruction-eggPlant li {
+    margin-top: 18px;
+}
+.ingredients-pinakbet {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 500px;
+}
+
+.ingredients-pinakbet h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.ingredients-pinakbet ul {
+    font-size: 23px;
+}
+
+.ingredients-pinakbet li {
+    margin-top: 15px;
+}
+
+.instruction-pinakbet {
+    width: 500px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.instruction-pinakbet h2 {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin-left: 10px;
+}
+
+.instruction-pinakbet ol {
+    font-size: 23px;
+    margin-right: 20px;
+}
+
+.instruction-pinakbet li {
+    margin-top: 18px;
+}
+.info .button{
+    transition: 0.3s ease-in-out;
+}
+.info .button:hover{
+    filter: drop-shadow(0 0 5px rgba(255, 178, 62));
+}
+.info-chicken .button{
+    transition: 0.3s ease-in-out;
+}
+.info-chicken .button:hover{
+    filter: drop-shadow(0 0 5px rgba(255, 178, 62));
+}
+@keyframes plate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
