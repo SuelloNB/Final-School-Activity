@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                                     <strong>Source:</strong> ${item.source}<br>
                                     <strong>Author:</strong> ${item.author}<br>
                                     <strong>Photo Credit:</strong> ${item.photoCredit}<br>
-                                    <strong>Caption By:</strong> ${item.caption}
+                                    <strong>Caption By:</strong> ${item.caption}<br>
+                                    <strong>Layout By:</strong> ${item.layout}
                                 </p>
                                 <span class="news-card-link">View Original Post</span>
                             </div>
