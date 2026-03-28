@@ -216,6 +216,7 @@ body {
     transition: transform 0.35s ease;
     display: -webkit-box;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -783,6 +784,7 @@ body {
         transform: translateY(0);
         font-size: 0.92rem;
         -webkit-line-clamp: 3;
+        line-clamp: 3;
     }
 
     /* Hover is unreliable on touch devices, so show description */
@@ -840,6 +842,7 @@ body {
     .news-card-description {
         padding: 0.8rem 0.9rem;
         -webkit-line-clamp: 3;
+        line-clamp: 3;
     }
 }
 
