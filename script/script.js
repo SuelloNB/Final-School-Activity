@@ -26,13 +26,18 @@ document.addEventListener("DOMContentLoaded", async () => {
                     day: "numeric"
                 });
 
+                const shortDescription =
+                    item.summary.length > 150
+                        ? item.summary.slice(0, 150).trim() + "..."
+                        : item.summary;
+
                 return `
                     <article class="news-card">
                         <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="news-card-anchor">
                             <div class="news-card-media">
                                 <img src="${item.image}" alt="${item.title}" class="news-card-image">
                                 <div class="news-card-overlay">
-                                    <p class="news-card-description">${item.summary}</p>
+                                    <p class="news-card-description">${shortDescription}</p>
                                 </div>
                             </div>
 
@@ -43,7 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                                     <strong>Source:</strong> ${item.source}<br>
                                     <strong>Author:</strong> ${item.author}<br>
                                     <strong>Photo Credit:</strong> ${item.photoCredit}<br>
-                                    <strong>Caption by:</strong>${item.caption}
+                                    <strong>Caption By:</strong> ${item.caption}
                                 </p>
                                 <span class="news-card-link">View Original Post</span>
                             </div>
